@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --border: #e5e5e5;
+  --accent: #f3f3f3;
+}
+
+@theme inline {
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+@layer base {
+  html {
+    @apply bg-white;
+  }
+
+  body {
+    @apply bg-white text-black font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium;
+  }
+
+  a {
+    @apply text-black hover:text-gray-700 transition-colors;
+  }
+}
