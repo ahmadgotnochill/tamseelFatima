@@ -8,5 +8,5 @@ const nextConfig = {
     missingSuspenseWithCSRBypass: true,
   }
 }
-
+ 
 export default nextConfig
